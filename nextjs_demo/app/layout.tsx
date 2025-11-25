@@ -28,7 +28,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <p className="bg-emerald-800">Footer all APP</p>
       </body>
+      
     </html>
   );
 }
