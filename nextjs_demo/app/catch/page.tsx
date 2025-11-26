@@ -21,5 +21,5 @@ export default async function CachedProductCard({producId}: {producId: string}) 
 
 //Need to fix the fetch URL to a working API endpoint
 
-//CatchLife => when to clear the cache
-//CachTag => What to clear from the cache
+//CatchLife => when to clear the cache... revalidate()
+//CachTag => What to clear from the cache... revalidateTag()
