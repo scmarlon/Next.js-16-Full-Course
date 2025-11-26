@@ -13,13 +13,11 @@ console.log("Estoy en el route de book by id");
 export async function PUT(
     request: Request,
     context: { params: { id: string } },
-    
-    
 )  
 
 {
     const id = +context.params.id;
-    console.log("Book ID to update:", id);
+    
     
     const book = await request.json();
 
@@ -43,4 +41,3 @@ export async function DELETE(
     books.splice(index, 1);
     return Response.json(books)
     }
-    
